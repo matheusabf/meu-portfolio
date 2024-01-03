@@ -1,0 +1,36 @@
+.titulo{
+    margin-top: 60px;
+    text-align:center;
+}
+.containerhab{
+    text-align:center;
+    margin-top:60px;
+    padding-bottom:50px;
+}
+.containerhab h1{
+    font-size:50px;
+    animation: fadeIn 1s ease-in-out;
+}
+@media only screen and (max-width: 768px) {
+    .dadoshab{
+      padding:20px;
+      margin: 0px;
+    }
+    .dadoshab img{
+      max-width:50px;
+      max-height:50px;
+    }
+    .tarja{
+      font-size:12px;
+    }
+    .tarjadiv span{
+      font-size:12px;
+    }
+    .containerhab h1{
+        font-size:30px;
+    }
+    .containerhab{
+        margin-top:100px;
+    }
+    
+  }

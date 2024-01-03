@@ -1,0 +1,14 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+.projContainer{
+  text-align:center;
+  margin-top:60px;
+  padding-bottom:50px;
+}
+.projContainer h1{
+  font-size:50px;
+  animation: fadeIn 1s ease-in-out;
+}

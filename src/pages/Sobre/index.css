@@ -1,0 +1,145 @@
+
+.containersobre{
+    display:flex;
+    flex-direction: column;
+
+}
+.sobre{
+    justify-content: left;
+    align-items:flex-start;
+    width:100%;
+    flex-direction: row;
+    display:flex;
+    background-color:#000000d3;
+}
+.sobre h1{
+    max-width:200px;
+    align-items:flex-start;
+    display:flex;
+    font-size:25px;
+    animation: slideInLeft 1s ease-in-out;
+}
+.sobreComponente{
+    margin:0px;
+    padding-left: 50px;
+    padding-right: 100px;
+    width:100%;
+    animation: slideInLeft 1s ease-in-out;
+}
+.sobredados{
+    display:flex;
+    flex-direction: row;
+    max-width:100%;
+    justify-content: space-between;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.dados{
+    width:100%;
+    margin-left:0px;
+}
+.dados:not(:first-child){
+    margin-left:25px;
+}
+.dados h3{
+    font-size:15px;
+}
+.dados span{
+    font-size:40px;
+    font-weight:600;
+}
+.dados hr{
+    border-width: 3px;
+    animation: slideInLeft 1s ease-in-out;
+}
+.sobremim p{
+    font-size:15px;
+}
+.titulosobre{
+    width:30%;
+    max-width:230px;
+}
+.experiencia{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top:15px;
+}
+
+.experiencia div{
+    
+    font-size:25px;
+    margin-top:2px;
+    animation: slideInLeft 1s ease-in-out;
+}
+.experiencia span{
+    font-size:15px;
+}
+.hrcomponente{
+    padding-right:100px;
+    margin-top:15px;
+}
+.dadosexperiencia{
+    width:100%;
+    display:flex;
+    margin-left:0px;
+    justify-content: space-between;
+}
+.dadosexperiencia div{
+    width:100%;
+    text-align:left;
+}
+.linhadados{
+    width:100%;
+    margin-left:0px;
+}
+hr{
+    border-color:#1b1b1b;
+    animation: slideInLeft 1s ease-in-out;
+}
+@media only screen and (max-width: 768px) {
+    .sobre{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .container{
+        padding-left:0;
+        padding-right:0;
+    }
+    .containersobre{
+        margin-top:-20px;
+        padding-left:10px;
+        padding-right:10px;
+        margin-bottom:50px;
+    }
+    .experiencia{
+        padding:0;
+        margin:0;
+        width:100%;
+    }
+    .sobreComponente{
+        padding:0;
+        margin:0;
+        width:100%;
+    }
+    .dados span{
+        font-size:20px;
+        font-weight:600;
+    }
+    .dados h3{
+        height:40px;
+    }
+    .hrcomponente{
+        width:100%;
+        padding:0;
+        margin:0;
+    }
+    .spanExperiencia span{
+        font-size:15px;
+    }
+    .spanExperiencia{
+        padding-left:5px;
+        padding-right:5px;
+    }
+}

@@ -1,0 +1,21 @@
+/* styles.css */
+
+.footer-content {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000d7;
+    color: white;
+  }
+  
+  .links-container {
+    display: flex;
+    gap: 20px;
+  }
+  @media only screen and (max-width: 768px) {
+    .footer-content{
+        display: flex;
+    }
+  }
+  

@@ -1,0 +1,93 @@
+.formulario{
+    margin-right:200px;
+    display:flex;
+    animation: fadeIn 1s ease-in-out;
+    flex-direction: column;
+}
+.formulario h1{
+    font-size:35px;
+    margin-left:10px;
+}
+.contato{
+    background-color: #5f097933;
+    padding:25px;
+    border-radius: 15px;
+    max-width:30%;
+    height:50%;
+    animation: fadeIn 1s ease-in-out;
+}
+.contato h2{
+    font-size:35px;
+}
+.contato span{
+    font-size:15px;
+    line-height:1.5;
+}
+.contato a{
+    text-decoration: none;
+    color:#fff;
+    line-height:2;
+}
+form input{
+    width:100%;
+    padding:10px;
+    border-radius:10px;
+}
+form textarea{
+    width:100%;
+    padding:10px;
+    border-radius:10px;
+    height:100px;
+}
+form button{
+    background-color: #5f097933;
+    color: #fff;
+    padding:15px;
+    max-width:50%;
+    border-radius:10px;
+}
+form div{
+    display:flex;
+}
+form{
+    padding-left:5px;
+    padding-right:5px;
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        width:90%;
+        display:flex;
+        flex-direction:column-reverse;
+        justify-content:center;
+        margin-left:5%;
+        box-sizing: border-box;
+        height:100%;
+    }
+    .contato{
+        width:100%;
+        max-width:100%;
+        justify-content:center;
+        box-sizing: border-box;
+        font-size:15px;
+        margin-bottom:30px;
+    }
+    .formulario{
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:50px;
+        display:flex;
+        flex-direction: column;
+        margin-right:0;
+    }
+    .formulario h1{
+        font-size:20px;
+        font-weight:800;
+        text-align:center;
+        margin-bottom:30px;
+    }
+    form button{
+        width:100%;
+        max-width:100%;
+    }
+}

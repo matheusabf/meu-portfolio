@@ -1,0 +1,170 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+mark{
+  background-color:#5f097981;
+  color:#ffa2f7;
+  padding:5px;
+  border-radius:5%;
+}
+.container{
+    padding-left: 50px;
+    padding-right:50px;
+    align-items:center;
+    display:flex;
+    height:100vh;
+    justify-content: center;
+}
+
+section{
+    display:flex;
+    width:100%;
+    align-items:center;
+}
+
+section div{
+    width:100%;
+}
+
+.col-1{
+    justify-content:center;
+}
+.col-1 h1{
+    font-size:40px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.col-1 span{
+    background-color: #5f097981;
+    padding: 15px;
+    color: #ffa2f7;
+    font-weight: 800;
+    font-size: 30px;
+    border-radius: 5%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.col-1 p{
+    color: rgb(221, 221, 221);
+    font-weight:600;
+    font-size:20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.col-2{
+    text-align:center;
+    justify-content: center;
+    width:100%;
+}
+.col-2 img{
+    max-width:450px;
+    animation: fadeInUp 1s ease-in-out;
+}
+.col-3{
+    text-align:right;
+    font-size:30px;
+    font-weight:800;
+    color: #ffa2f7;
+}
+
+.col-3 a{
+    color: inherit;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    display: inline-block;
+    font-size:25px;
+    animation: slideInLeft 1s ease-in-out;
+}
+.col-3 a:hover{
+    color: #d181e9b2;
+    transform: scale(1.01);
+}
+
+.btnconversa{
+    font-size:30px;
+    padding:10px;
+    border-top: 0;
+    border-right: 2px solid #5f097981;
+    border-bottom: 2px solid #5f097981;
+    border-left: 2px solid #5f097981;
+    border-radius:10%;
+    color:#fff;
+    cursor:pointer;
+    transition-duration: 0.5s;
+    display: inline-block;
+    animation: slideInLeft 1s ease-in-out;
+    margin-bottom:50px;
+}
+.btnconversa:hover{
+    transform: scale(1.01);
+    color: #ffa2f7;
+}
+
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    
+    .col-2 img{
+      max-width:200px;
+      
+    }
+    .col-1 h1{
+      font-size:25px;
+    }
+    .col-1 span{
+      font-size:25px;
+      padding-left: 10px;
+      padding-right:10px;
+      padding-top:5px;
+      padding-bottom:5px;
+    }
+    .col-3{
+      text-align:center;
+    }
+    .col-3 a{
+      margin-bottom:10px;
+      margin-top:10px;
+    }
+    .col-2{
+      order: -1;
+      margin-bottom:20px;
+      margin-top:0;
+    }
+    .col-1{
+      justify-content: center;
+      text-align:center;
+    }
+    .secao{
+      margin-top:0;
+      display:flex;
+      flex-direction:column;
+    }
+  }

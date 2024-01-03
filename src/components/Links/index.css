@@ -1,0 +1,24 @@
+.Links a {
+    font-size:35px;
+    text-decoration:none;
+    color: #fff;
+    padding: 10px;
+    transition-duration: 0.3s;
+    display:inline-block;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.Links a:hover{
+    transform: scale(1.1);
+}
+
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
