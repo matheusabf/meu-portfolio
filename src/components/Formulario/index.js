@@ -67,7 +67,7 @@ const Formulario = () => {
       </div>
       <input type="hidden" name="_subject" value="Novo Contato!"></input>
       <input type="hidden" name="_captcha" value="false"></input>
-      <input type="hidden" name="_next" value="http://localhost:3000/contato"></input>
+      <input type="hidden" name="_next" value="https://matheusabf.vercel.app/contato"></input>
       <div>
       <button type="submit" style={{ width: '100%' }}>Enviar Mensagem</button>
       </div>
