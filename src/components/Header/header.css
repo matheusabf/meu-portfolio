@@ -139,9 +139,22 @@ header{
         justify-content: center;
         padding:15px; 
         margin-bottom:-80px;   
+        width:25px;
     }
     .menuHamb{
         justify-content: center;
         display:flex;
     }
 }
+#menu {
+    
+  transition: opacity 0.5s ease;
+  }
+  
+  .hidden {
+    opacity: 0;
+    pointer-events: none; /* Impede que elementos ocultos sejam clicados */
+  }
+  .fade {
+    opacity: 1;
+  }
