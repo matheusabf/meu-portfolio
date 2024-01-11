@@ -46,7 +46,6 @@ header{
     top: -900px; /* Altere de -900px para 0 quando quiser exibir o menu */
     width: 100%;
     height: 100%;
-    background-color: #000000c7;
     padding-top: 90px;
     transition: 0.5s;
     z-index: 999;
