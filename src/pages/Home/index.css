@@ -58,7 +58,7 @@ section div{
     width:100%;
 }
 .col-2 img{
-    max-width:450px;
+    max-width:600px;
     animation: fadeInUp 1s ease-in-out;
     border-radius:100%;
 }
