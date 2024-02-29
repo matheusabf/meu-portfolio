@@ -7,12 +7,14 @@ function ProjetoGit() {
         <div className="projeto">
         <div className="img">
           <img src={imagem} alt={nome} />
-          </div>
+        </div>
+        <div className="projetoinfos">
           <h2>{nome}</h2>
           <p>{descricao}</p>
           <div className="botoes">
             <a href={link} target="_blank" rel="noreferrer"><span className="deploy">Ver Site</span></a>
             <a href={github} target="_blank" rel="noreferrer"><span className="github">Github</span></a>
+          </div>
           </div>
         </div>
     </div>
