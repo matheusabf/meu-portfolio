@@ -1,6 +1,7 @@
+
 .projetos{
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     width:100%;
     text-align:center;
     justify-content:center;
@@ -17,20 +18,26 @@
 .projetos h2{
     color:#ffa2f7;
 }
-
+.projetoinfos{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    height:auto;
+}
 .projeto{
     border: 5px solid #fff;
-    margin:15px;
+    margin:25px;
     border-radius:20px;
     z-index:2;
     position:relative;
-    max-width:300px;
-    width:100%;
-    height:400px;
+    align-items: center;
+    width:80%;
+    height:auto;
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     animation: fadeIn 0.5s ease-in-out;
     background-color: #000000;
+    
 }
 .img{
     width:100%;
@@ -50,15 +57,14 @@
       
 }
 .img img {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border: 15px;
+    border-radius:20px;
     display: block;
     width: 100%;
     height: auto;
     z-index: 2; /* Certifique-se de que a imagem esteja abaixo do gradiente */
   }
 .projeto p{
-    padding-bottom:35px;
     padding-left: 10px;
     padding-right:10px;
     font-size:16px;
@@ -75,7 +81,6 @@
 }
 .botoes{
     width:100%;
-    margin-top:auto;
     margin-bottom: 40px;
 }
 
