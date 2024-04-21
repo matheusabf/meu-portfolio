@@ -12,7 +12,7 @@ function Home (){
                     <Links/>
                 </div>   
                 <div className="col-2">
-                    <img className="perfil" src="https://github.com/matheusabf/meu-portfolio/assets/48792317/9f30d108-3bd2-45fe-a345-30172b5a5fdd" alt="imagem de perfil"></img>
+                    <img className="perfil" src="https://github.com/matheusabf/meu-portfolio/assets/48792317/5c866645-2f40-4d96-81ad-ad8b928d2165" alt="imagem de perfil"></img>
                 </div>
                 <div className="col-3">
                     <span><a href="https://github.com/matheusabf/meu-portfolio/files/14450162/Curriculo_Matheus.pdf">Baixar CV <i class="fas fa-arrow-down"></i></a></span><br/>
