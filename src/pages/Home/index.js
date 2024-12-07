@@ -8,9 +8,9 @@ function Home (){
                 <div className="col-1">
                     <span>👋 Olá Mundo!</span>
                     <h1>Eu sou o Matheus ☕</h1> 
-                    <p>Desenvolvedor <mark>Front-End</mark> - <mark>UX Designer</mark></p>
+                    <p><mark> Full-Stack </mark> - <mark> Developer </mark></p>
                     <Links/>
-                </div>   
+                </div>    
                 <div className="col-2">
                     <img className="perfil" src="https://github.com/matheusabf/meu-portfolio/assets/48792317/bd313bc1-eda1-4c14-ab75-83ca9d47671d" alt="imagem de perfil"></img>
                 </div>
