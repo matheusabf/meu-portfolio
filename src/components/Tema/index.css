@@ -1,0 +1,26 @@
+
+
+/* Botão de alternância */
+.theme-toggle-btn {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: var(--cor-secundaria);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f9d71c;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease;
+}
+
+/* Cor do botão no modo escuro */
+body.dark-theme .theme-toggle-btn {
+  color: #fff;
+  background-color: #4b4b4b2c;
+}

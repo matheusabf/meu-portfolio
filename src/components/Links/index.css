@@ -1,7 +1,7 @@
 .Links a {
     font-size:35px;
     text-decoration:none;
-    color: #fff;
+    color: var(--fonte-primaria);
     padding: 10px;
     transition-duration: 0.3s;
     display:inline-block;
@@ -10,6 +10,7 @@
 
 .Links a:hover{
     transform: scale(1.1);
+    color: var(--fonte-primaria-hover);
 }
 
 @keyframes slideInLeft {

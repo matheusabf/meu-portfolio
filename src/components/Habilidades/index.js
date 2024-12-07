@@ -8,18 +8,13 @@ const dadosItens = [
     estado: true,
   },
   {
-    linguagem: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png',
-    experiencia: 'HTML',
+    linguagem: 'https://i.pinimg.com/originals/2b/9a/11/2b9a117a2476341aa1c113a7142197da.png',
+    experiencia: 'MySQL',
     estado: true,
   },
   {
-    linguagem: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1024px-CSS3_logo.svg.png',
-    experiencia: 'CSS',
-    estado: true,
-  },
-  {
-    linguagem: 'https://cdn.icon-icons.com/icons2/2699/PNG/512/firebase_logo_icon_171157.png',
-    experiencia: 'Firebase',
+    linguagem: 'https://douglasnickson.com.br/wp-content/uploads/2023/06/instalando-PHP.png',
+    experiencia: 'PHP',
     estado: true,
   },
   {
@@ -28,8 +23,18 @@ const dadosItens = [
     estado: true,
   },
   {
-    linguagem: 'https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png',
-    experiencia: 'Vue.js',
+    linguagem: 'https://cdn-icons-png.flaticon.com/512/1493/1493169.png',
+    experiencia: 'API',
+    estado: true,
+  },
+  {
+    linguagem: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png',
+    experiencia: 'HTML',
+    estado: true,
+  },
+  {
+    linguagem: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1024px-CSS3_logo.svg.png',
+    experiencia: 'CSS',
     estado: true,
   },
   {
@@ -43,11 +48,6 @@ const dadosItens = [
     estado: true,
   },
   {
-    linguagem: 'https://i.pinimg.com/originals/2b/9a/11/2b9a117a2476341aa1c113a7142197da.png',
-    experiencia: 'MySQL',
-    estado: true,
-  },
-  {
     linguagem: 'https://seeklogo.com/images/W/wordpress-logo-24439D45A6-seeklogo.com.png',
     experiencia: 'WordPress',
     estado: true,
@@ -55,11 +55,6 @@ const dadosItens = [
   {
     linguagem: 'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png',
     experiencia: 'Python',
-    estado: false,
-  },
-  {
-    linguagem: 'https://www.datocms-assets.com/75941/1657707878-nextjs_logo.png',
-    experiencia: 'Next.js',
     estado: false,
   },
   {

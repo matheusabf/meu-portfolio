@@ -3,8 +3,8 @@ body {
   font-family: 'Dosis', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:#000000;
-  
+  background-color:var(--cor-primaria);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 code {
@@ -16,7 +16,7 @@ code {
 .app {
   position: relative;
   z-index: 1;
-  color: #fff;
+  color: var(--fonte-primaria);
 }
 
 
@@ -33,11 +33,12 @@ code {
 
 .line {
   position: absolute;
-  width: 1px;
+  width: 10px;
   height: 100%;
   top: 0;
   left: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--cor-primaria);
+  transition: background-color 0.3s ease, color 0.3s ease;
   overflow: hidden;
 }
 
@@ -49,7 +50,7 @@ code {
   width: 100%;
   top: -50%;
   left: 0;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--cor-secundaria) 75%, var(--cor-secundaria-hover) 100%);
   animation: drop 7s 0s infinite;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
@@ -114,3 +115,15 @@ code {
       flex-direction:column;
     }
   }
+
+  :root {
+    --cor-primaria: #F4F2EE;
+    --cor-primaria-hover: #ebe8e3;
+    --cor-secundaria: #243a69;
+    --cor-secundaria-hover: #243a69;
+    --fonte-secundaria: #ffffff;
+    --fonte-primaria: #666666;
+    --fonte-primaria-hover: #585858;
+    --fonte-padrao: 'Arial', sans-serif;
+  }
+  

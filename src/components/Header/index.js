@@ -1,13 +1,22 @@
 
-import { Link } from 'react-router-dom';
+import { Link, NavLink} from 'react-router-dom';
 import './header.css';
 import React, { useState, useEffect } from 'react';
+import Tema from '../Tema';
 
 import Links from '../../components/Links'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faUser, faProjectDiagram, faCode, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
 function Header() {
     
+  const [isActive, setIsActive] = useState(false); // Estado para controlar se o botão está ativo
+
+  const toggleActive = () => {
+    setIsActive(!isActive);
+    document.body.classList.toggle('dark-theme', !isActive);
+  };
     const [isMenuOpen, setMenuOpen] = useState(false);
     const toggleMenu = () => {
         setMenuOpen(!isMenuOpen);
@@ -40,12 +49,44 @@ function Header() {
     return (
         <div id="menu" className='headerDiv'>
             <header id="menu" className={isVisible ? '' : 'hidden'}>
-                <Link className="logo" to="/">Home</Link>
-                <Link className="logo" to="/sobre">Sobre</Link>
-                <Link className="logo" to="/projetos">Projetos</Link>
-                <Link className="logo" to="/habilidades">Habilidades</Link>
-                <Link className="logo" to="/contato">Contato</Link>
-            </header>
+        
+        <Tema />
+      <NavLink 
+        className="logo" 
+        to="/" 
+        activeClassName="active"
+      >
+        <FontAwesomeIcon icon={faHome} /> Home
+      </NavLink>
+      <NavLink 
+        className="logo" 
+        to="/sobre" 
+        activeClassName="active"
+      >
+        <FontAwesomeIcon icon={faUser} /> Sobre
+      </NavLink>
+      <NavLink 
+        className="logo" 
+        to="/projetos" 
+        activeClassName="active"
+      >
+        <FontAwesomeIcon icon={faProjectDiagram} /> Projetos
+      </NavLink>
+      <NavLink 
+        className="logo" 
+        to="/habilidades" 
+        activeClassName="active"
+      >
+        <FontAwesomeIcon icon={faCode} /> Habilidades
+      </NavLink>
+      <NavLink 
+        className="logo" 
+        to="/contato" 
+        activeClassName="active"
+      >
+        <FontAwesomeIcon icon={faEnvelope} /> Contato
+      </NavLink>
+    </header>
             <div className="menuHamb">
               <div className="menu-btn" onClick={toggleMenu}>
                 <div className="bar"></div>

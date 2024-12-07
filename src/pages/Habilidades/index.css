@@ -9,7 +9,6 @@
 }
 .containerhab h1{
     font-size:50px;
-    animation: fadeIn 1s ease-in-out;
 }
 @media only screen and (max-width: 768px) {
     .dadoshab{

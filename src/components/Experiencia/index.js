@@ -2,19 +2,24 @@
 import React from 'react';
 const dadosItens = [
     {
-      nome: 'Guiare - Manual do Proprietário',
-      tempo: '05/2023 - até o momento',
-      cargo: 'Estagiário de audiovisual',
+        nome: 'Multidados TI',
+        tempo: '04/2024 - até o momento',
+        cargo: 'Estagiário em desenvolvimento full-stack',
+    },
+    {
+        nome: 'Guiare - Manual do Proprietário',
+        tempo: '05/2023 - 04/2024',
+        cargo: 'Estagiário em audiovisual',
     },
     {
         nome: 'Custo X Confecções',
         tempo: '02/2023 - 05/2023',
-        cargo: 'Desenvolvedor Web Júnior',
+        cargo: 'Desenvolvedor de Sistemas Júnior',
     },
     {
         nome: 'Ganep Educação',
         tempo: '05/2022 - 01/2023',
-        cargo: 'Desenvolvedor Web Júnior',
+        cargo: 'Desenvolvedor de Sistemas Júnior',
     },
     {
         nome: 'EB Treinamentos',

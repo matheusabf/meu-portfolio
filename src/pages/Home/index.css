@@ -3,8 +3,8 @@ body{
     margin: 0;
 }
 mark{
-  background-color:#5f097981;
-  color:#ffa2f7;
+  background-color:var(--cor-secundaria);
+  color:var(--fonte-secundaria);
   padding:5px;
   border-radius:5%;
 }
@@ -36,9 +36,9 @@ section div{
 }
 
 .col-1 span{
-    background-color: #5f097981;
+    background-color: var(--cor-secundaria);
     padding: 15px;
-    color: #ffa2f7;
+    color: var(--fonte-secundaria);
     font-weight: 800;
     font-size: 30px;
     border-radius: 5%;
@@ -46,7 +46,7 @@ section div{
 }
 
 .col-1 p{
-    color: rgb(221, 221, 221);
+    color: var(--cor-secundaria);
     font-weight:600;
     font-size:20px;
     animation: fadeIn 1s ease-in-out;
@@ -61,16 +61,18 @@ section div{
     max-width:600px;
     animation: fadeInUp 1s ease-in-out;
     border-radius:100%;
+    border: 5px;
+    border: 15px double var(--cor-secundaria); /* Define uma borda sólida de 5px e cor branca */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Adiciona sombra */
 }
 .col-3{
     text-align:right;
     font-size:30px;
     font-weight:800;
-    color: #ffa2f7;
+    color: var(--fonte-secundaria);;
 }
-
 .col-3 a{
-    color: inherit;
+    color: var(--fonte-primaria);
     text-decoration: none;
     transition-duration: 0.4s;
     display: inline-block;
@@ -78,7 +80,7 @@ section div{
     animation: slideInLeft 1s ease-in-out;
 }
 .col-3 a:hover{
-    color: #d181e9b2;
+    color: var(--cor-secundaria-hover);;
     transform: scale(1.01);
 }
 
@@ -86,11 +88,11 @@ section div{
     font-size:30px;
     padding:10px;
     border-top: 0;
-    border-right: 2px solid #5f097981;
-    border-bottom: 2px solid #5f097981;
-    border-left: 2px solid #5f097981;
+    border-right: 2px solid var(--cor-secundaria);
+    border-bottom: 2px solid var(--cor-secundaria);
+    border-left: 2px solid var(--cor-secundaria);
     border-radius:10%;
-    color:#fff;
+    color:var(--fonte-primaria);
     cursor:pointer;
     transition-duration: 0.5s;
     display: inline-block;
@@ -99,7 +101,7 @@ section div{
 }
 .btnconversa:hover{
     transform: scale(1.01);
-    color: #ffa2f7;
+    color: var(--cor-secundaria);
 }
 
 

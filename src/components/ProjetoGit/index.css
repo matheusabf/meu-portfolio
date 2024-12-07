@@ -15,8 +15,8 @@
     justify-content:center;
     align-items:center;
 }
-.projetos h2{
-    color:#ffa2f7;
+.projetos h2, p{
+    color:var(--fonte-secundaria);
 }
 .projetoinfos{
     width:100%;
@@ -35,9 +35,10 @@
     height:auto;
     display:flex;
     flex-direction:row;
-    animation: fadeIn 0.5s ease-in-out;
-    background-color: #000000;
+    animation: fadeIn 1s ease-in-out;
+    background: linear-gradient(135deg, var(--cor-secundaria-hover), var(--cor-secundaria));
     
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .img{
     width:100%;
@@ -73,7 +74,7 @@
 .projetos a{
     text-decoration:none;
     transition-duration:1s;
-    color:#fff;
+    color: var(--fonte-secundaria);
     cursor:pointer;
 }
 .projetos a:hover{
@@ -87,7 +88,7 @@
 .github{
     padding:15px;
     margin-left:10px;
-    background-color:#470e4e96;
+    background-color: var(--cor-secundaria);
     transition-duration:0.3s;
     cursor:pointer;
     color: #fff;
@@ -95,7 +96,7 @@
 }
 
 .github:hover{
-    background-color:#470e4e41;
+    background-color: var(--cor-secundaria-hover);
     transform:scale(1.3);
 }
 

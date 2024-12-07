@@ -10,7 +10,7 @@
     width:100%;
     flex-direction: row;
     display:flex;
-    background-color:#000000d3;
+    color: var(--fonte-primaria)
 }
 .sobre h1{
     max-width:200px;
@@ -54,6 +54,7 @@
 }
 .sobremim p{
     font-size:15px;
+    color: var(--fonte-primaria)
 }
 .titulosobre{
     width:30%;
@@ -94,7 +95,7 @@
     margin-left:0px;
 }
 hr{
-    border-color:#1b1b1b;
+    border-color:var(--cor-secundaria);
     animation: slideInLeft 1s ease-in-out;
 }
 @media only screen and (max-width: 768px) {
