@@ -8,7 +8,7 @@ function Home (){
                 <div className="col-1">
                     <span>👋 Olá Mundo!</span>
                     <h1>Eu sou o Matheus ☕</h1> 
-                    <p><mark> Full-Stack </mark> - <mark> Developer </mark></p>
+                    <p>Desenvolvedor <mark> Full-Stack </mark></p>
                     <Links/>
                 </div>    
                 <div className="col-2">
