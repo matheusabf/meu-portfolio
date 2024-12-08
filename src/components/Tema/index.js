@@ -1,54 +1,16 @@
-import React, { useState, useEffect } from "react";
-import "./index.css";
+import React from "react";
+import { useTheme } from "../../context/ThemeContext"; // Importando o hook useTheme
+import "./index.css"; // Certifique-se de que o estilo para o botão esteja aqui
 
 function ThemeToggle() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  // Carregar o tema salvo no localStorage e aplicar no :root
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      setIsDarkMode(true);
-      applyTheme("dark");
-    }
-  }, []);
-
-  // Alternar tema
-  const toggleTheme = () => {
-    const newMode = !isDarkMode ? "dark" : "light";
-    setIsDarkMode(!isDarkMode);
-    applyTheme(newMode);
-    localStorage.setItem("theme", newMode);
-  };
-
-  // Função para alterar as variáveis no :root
-  const applyTheme = (theme) => {
-    const root = document.documentElement;
-
-    if (theme === "dark") {
-      root.style.setProperty("--cor-primaria", "#121212");
-      root.style.setProperty("--cor-primaria-hover", "#1a1a1a");
-      root.style.setProperty("--cor-secundaria", "#5f097981");
-      root.style.setProperty("--cor-secundaria-hover", "#1c0b2b");
-      root.style.setProperty("--fonte-secundaria", "#ffffff");
-      root.style.setProperty("--fonte-primaria", "#cccccc");
-      root.style.setProperty("--fonte-primaria-hover", "#aaaaaa");
-    } else {
-      root.style.setProperty("--cor-primaria", "#F4F2EE");
-      root.style.setProperty("--cor-primaria-hover", "#ebe8e3");
-      root.style.setProperty("--cor-secundaria", "#243a69");
-      root.style.setProperty("--cor-secundaria-hover", "#243a69");
-      root.style.setProperty("--fonte-secundaria", "#ffffff");
-      root.style.setProperty("--fonte-primaria", "#666666");
-      root.style.setProperty("--fonte-primaria-hover", "#585858");
-    }
-  };
+  const { isDarkMode, toggleTheme } = useTheme(); // Usando o contexto para pegar o estado e a função de alternância
 
   return (
     <button
       className="theme-toggle-btn"
-      onClick={toggleTheme}
+      onClick={toggleTheme} // Chamando a função para alternar o tema
       aria-label="Alternar tema"
+      id="botao-tema"
     >
       {isDarkMode ? (
         // Ícone de Lua

@@ -59,11 +59,13 @@ section div{
 }
 .col-2 img{
     max-width:600px;
+    max-height:600px;
     animation: fadeInUp 1s ease-in-out;
     border-radius:100%;
     border: 5px;
     border: 15px double var(--cor-secundaria); /* Define uma borda sólida de 5px e cor branca */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Adiciona sombra */
+    transition: opacity 0.3s ease-in-out;
 }
 .col-3{
     text-align:right;
