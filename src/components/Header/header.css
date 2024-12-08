@@ -17,8 +17,8 @@ header{
   }
 .theme-toggle-btn {
     position:fixed;
-    top:0;
-  z-index:9999;
+    top:25px;
+    z-index:9999;
   }
 .logo{
     text-decoration: none;
