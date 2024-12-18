@@ -25,7 +25,7 @@ function Home() {
         </div>
         <div className="col-3">
           <span>
-            <a href="https://github.com/matheusabf/meu-portfolio/files/14450162/Curriculo_Matheus.pdf">
+            <a href="https://github.com/user-attachments/files/18187944/Matheus.Alves.Bento.Ferreira.docx">
               Baixar CV <i className="fas fa-arrow-down"></i>
             </a>
           </span>
